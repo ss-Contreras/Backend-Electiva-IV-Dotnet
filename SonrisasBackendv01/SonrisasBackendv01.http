@@ -1,0 +1,6 @@
+@SonrisasBackendv01_HostAddress = http://localhost:5012
+
+GET {{SonrisasBackendv01_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
