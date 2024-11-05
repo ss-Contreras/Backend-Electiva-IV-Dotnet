@@ -1,1 +1,66 @@
+# Visual Studio Code y configuraciones del proyecto
+.vscode/
 .vs/
+SonrisasBackendv01/Properties/launchSettings.json
+
+# Archivos binarios y de compilación
+bin/
+obj/
+
+# Archivos de configuración y de usuario específicos del entorno
+*.csproj.user
+*.suo
+*.userprefs
+
+# Archivos de configuración de la aplicación (sensible)
+appsettings.json
+appsettings.Development.json
+
+# Archivos de migración y de Entity Framework generados
+SonrisasBackendv01/Migrations/
+
+# Archivos temporales, de log y de cache
+*.log
+*.cache
+*.tmp
+*.swp
+*~
+
+# Configuraciones de paquetes y dependencias
+packages/
+project.lock.json
+project.fragment.lock.json
+project.nuget.cache
+.nuget/
+SonrisasBackendv01/SonrisasBackendv01.csproj.nuget.g.props
+SonrisasBackendv01/SonrisasBackendv01.csproj.nuget.g.targets
+
+# Archivos de publicación y de despliegue
+publish/
+dist/
+SonrisasBackendv01/bin/
+SonrisasBackendv01/obj/
+SonrisasBackendv01/wwwroot/ImagenesPacientes/
+
+# Archivos de configuración de Git en caso de haber configuraciones locales adicionales
+.git/
+
+# Archivos de GitHub (si no los necesitas en el repositorio)
+.github/
+
+# Ignorar archivos generados de compilación
+*.dll
+*.pdb
+*.exe
+*.out
+*.dmg
+
+# Otros archivos generados automáticamente
+*.ide
+.DS_Store
+Thumbs.db
+*.bak
+*.orig
+*.rej
+*.err
+*.class
