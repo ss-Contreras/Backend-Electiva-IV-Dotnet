@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using SonrisasBackendv01.Dtos;
+using SonrisasBackendv01.DTOs;
 using SonrisasBackendv01.Models;
 using SonrisasBackendv01.Models.Dtos;
 
@@ -36,6 +37,13 @@ namespace SonrisasBackendv01.GestorMappers
 				.ForMember(dest => dest.NombreOdontologo, opt => opt.MapFrom(src => src.Odontologo.Nombre));
 			CreateMap<CrearCitaDto, Cita>();
 			CreateMap<ActualizarCitaDto, Cita>();
+
+			CreateMap<Radiografia, LeerRadiografiaDto>()
+							.ForMember(dest => dest.NombrePaciente, opt => opt.MapFrom(src => $"{src.Paciente.Nombre}"))
+							.ForMember(dest => dest.CorreoElectronicoPaciente, opt => opt.MapFrom(src => src.Paciente.Email));
+
+			CreateMap<CrearRadiografiaDto, Radiografia>();
+			CreateMap<ActualizarRadiografiaDto, Radiografia>();
 		}
     }
 }

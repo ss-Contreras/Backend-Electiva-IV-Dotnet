@@ -22,6 +22,7 @@ builder.Services.AddScoped<IOdontologoRepositorio, OdontologoRepositorio>();
 builder.Services.AddScoped<IConsultorioRepositorio, ConsultorioRepositorio>();
 builder.Services.AddScoped<IHistorialRepositorio, HistorialRepositorio>();
 builder.Services.AddScoped<ICitaRepositorio, CitaRepositorio>();
+builder.Services.AddScoped<IRadiografiaRepositorio, RadiografiaRepositorio>();
 
 
 var key = builder.Configuration.GetValue<string>("ApiSettings:Secreta");

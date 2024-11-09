@@ -55,7 +55,9 @@ namespace SonrisasBackendv01.Models
 
 		// Relación con Citas
 		public ICollection<Cita> Citas { get; set; }
-    }
+        // Relacion con Radiografias
+		public ICollection<Radiografia> Radiografias { get; set; }
+	}
 
     public enum OpcionBinaria
     {

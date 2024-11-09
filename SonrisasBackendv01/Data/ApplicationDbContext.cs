@@ -49,5 +49,6 @@ namespace SonrisasBackendv01.Data
 		public DbSet<Consultorio> Consultorios { get; set; }
 		public DbSet<Historial> Historiales { get; set; }
 		public DbSet<AppUsuario> AppUsuario { get; set; }
+		public DbSet<Radiografia> Radiografias { get; set; }
 	}
 }
